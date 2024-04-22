@@ -1,0 +1,306 @@
+Ans1)
+#include<iostream>
+using namespace std;
+int main() {
+int n,k=1;
+cout<<"Enter the number of rows : ";
+cin>>n;
+for (int i = 1; i <=n; i++)
+{
+    for (int j = 1; j <=n; j++)
+    {
+        cout<<" "<<k;
+    }
+    cout<<endl;
+    k++;
+}
+
+
+
+
+
+
+
+    return 0;
+}
+
+Ans2)
+#include<iostream>
+using namespace std;
+int main() {
+int n;
+cout<<"Enter the number of rows : ";
+cin>>n;
+for (int i = 1; i <=n; i++)
+{
+    for (int j = 1; j<=n+1-i; j++)
+    {
+        cout<<" "<<j;
+    }
+    cout<<endl;
+    
+}
+
+
+
+
+
+
+    return 0;
+}
+Ans3)
+#include<iostream>
+using namespace std;
+int main() {
+int n;
+cout<<"Enter the number of rows : ";
+cin>>n;
+for (int i = 1; i <=n; i++)
+{
+    for (int j = 1; j <=i; j++)
+    {
+        int k = 64+j;
+        char ch = (int)k;
+        cout<<" "<<ch;
+    }
+    cout<<endl;
+}
+
+
+
+
+
+    return 0;
+}
+Ans4)
+#include<iostream>
+using namespace std;
+int main() {
+int n,m=0;
+cout<<"Enter the number of rows : ";
+cin>>n;
+for (int i = 1; i <=n; i++)
+{
+    for (int j = 1; j <=i; j++)
+    {
+        if (i%2==0)
+        {
+            int m = 64+j;
+            char ch = (int)m;
+            cout<<" "<<ch;
+        }
+        else cout<<" "<<j;
+    }
+    cout<<endl;
+}
+return 0;
+}
+Ans5)
+#include<iostream>
+using namespace std;
+int main() {
+int n;
+cout<<"Enter the number of rows : ";
+cin>>n;
+for (int i = 1; i <=n; i++)
+{
+    for (int j = 1; j <=i; j++)
+    {
+        cout<<"*";
+    }
+    cout<<endl;
+}
+for (int i = 1; i <=n; i++)
+{
+    for (int k = 1; k <=n-i; k++)
+    {
+        cout<<"*";
+    }
+    cout<<endl;
+}
+
+
+
+
+
+
+    return 0;
+}
+Ans6)
+#include<iostream>
+using namespace std;
+int main() {
+int n,m;
+cout<<"Enter the number of rows : ";
+cin>>n;
+cout<<"Enter the number of coloums : ";
+cin>>m;
+for (int i = 1; i <=n; i++)
+{
+    for (int j = 1; j <=m; j++)
+    {
+        if ((i==1)||(i==n)||(j==1)||(j==m))
+        {
+            cout<<"*";
+        }
+        else cout<<" ";
+    }
+    cout<<endl;
+}
+
+
+
+
+
+
+
+    return 0;
+}
+Ans7)
+#include<iostream>
+using namespace std;
+int main() {
+int n;
+cout<<"Enter the number of rows : ";
+cin>>n;
+for (int i = 1; i <=n; i++)
+{
+    for (int j = 1; j<=n-i; j++)
+    {
+        cout<<" ";
+    }
+    for (int k = 1; k <=n; k++)
+    {
+        cout<<"*";
+    }
+    cout<<endl;
+}
+
+
+
+
+
+
+
+    return 0;
+}
+Ans8)
+#include<iostream>
+using namespace std;
+int main() {
+int n;
+cout<<"Enter number of rows : ";
+cin>>n;
+for (int i = 1; i <=n; i++)
+{
+    for (int j = 1; j <=i; j++)
+    {
+        cout<<" "<<j;
+    }
+    cout<<endl;
+}
+
+
+
+
+
+
+    return 0;
+}
+Ans9)
+#include<iostream>
+using namespace std;
+int main() {
+int n;
+cout<<"Enter number of rows : ";
+cin>>n;
+for (int i = 1; i <=n; i++)
+{
+    for (int j = 1; j <=n-i; j++)
+    {
+        cout<<" ";
+    }
+
+   for (int k = 1; k<=i; k++)
+   {
+    int l = 64+k;
+    char ch = (int)l;
+    cout<<ch;
+   }
+    cout<<endl;
+}
+
+
+
+
+
+    return 0;
+}
+Ans10)
+#include<iostream>
+using namespace std;
+int main() {
+int n,k=0;
+cout<<"Enter the number of rows : ";
+cin>>n;
+for (int i = 1; i <=n; i++)
+{   k = i;
+    for (int j = 1; j <=i; j++)
+    {
+        
+        
+        cout<<" "<<k;
+         k--;
+    }
+   cout<<endl;
+}
+
+
+
+
+
+
+    return 0;
+}
+Ans11)
+#include<iostream>
+using namespace std;
+int main() {
+int n;
+cout<<"Enter the number of row : ";
+cin>>n;
+for (int i = 1; i <=n; i++)
+{
+    for (int j = 1; j <=n-i; j++)
+    {
+        cout<<" ";
+
+    }
+    for (int k = 1; k <=i; k++)
+    {
+        cout<<"*";
+    }
+    cout<<endl;
+}
+for (int i = 1; i <=n; i++)
+{
+    for (int m = 1; m <=i; m++)
+    {
+        cout<<" ";
+
+    }
+    for (int l = 1; l <=n-i; l++)
+    {
+        cout<<"*";
+    }
+    cout<<endl;
+}
+
+
+
+
+
+
+
+    return 0;
+}
